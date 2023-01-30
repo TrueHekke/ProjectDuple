@@ -27,19 +27,19 @@ function createLobbyBtnMenu(container){
     easyButton.textContent = '1';
     easyButton.classList.add('main-sreen__button');
     easyButton.addEventListener('click',function (){
-        window.application.buttons.value = 'easy';
+        window.application.levels.value = 'easy';
     });
     const normalButton = document.createElement('button');
     normalButton.textContent = '2';
     normalButton.classList.add('main-sreen__button');
     normalButton.addEventListener('click',function normalLevel(){
-        window.application.buttons.value = 'normal';
+        window.application.levels.value = 'normal';
     });
     const hardButton = document.createElement('button');
     hardButton.textContent = '3';
     hardButton.classList.add('main-sreen__button');
     hardButton.addEventListener('click',function hardLevel(){
-        window.application.buttons.value = 'hard';
+        window.application.levels.value = 'hard';
     });
     container.appendChild(lobbyBtnMenu);
     lobbyBtnMenu.appendChild(easyButton);
@@ -52,17 +52,14 @@ function createStartBtn(container){
     startButton.textContent = 'Старт';
     startButton.classList.add('main-sreen__startBtn');
     startButton.addEventListener('click',function(){
-        if(window.application.buttons.value === 'easy'){
-            console.log('lets easy')
-            //Здесь будет переход на лёгкий уровень сложности
-        } else if(window.application.buttons.value === 'normal'){
-            console.log('lets normal')
-            //Здесь переход на средний
-        }else if(window.application.buttons.value === 'hard'){
-            console.log('lets hard')
-            //А здесь на большой
+        if(window.application.levels.value === 'easy'){
+            window.application.renderScreen('easy-level');
+        } else if(window.application.levels.value === 'normal'){
+            window.application.renderScreen('normal-level');
+        }else if(window.application.levels.value === 'hard'){
+            window.application.renderScreen('hard-level');
         }
-    })//Не стал добавлять очистку предыдущий значений, если несколько раз нажимать на кнопки, потому что в будущем вместо консоль лога будет переход на другую страницу
+    })
     container.appendChild(startButton);
 }
 
