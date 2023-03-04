@@ -1,0 +1,61 @@
+/* stylelint-disable selector-class-pattern */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: StratosSkyeng, sans-serif;
+    background-color: #004980;
+}
+
+.main-sreen {
+    position: absolute;
+    width: 480px;
+    height: 459px;
+    background: #c2f5ff;
+    border-radius: 12px;
+    margin: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.main-sreen__h1 {
+    width: 208px;
+    height: 96px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #004980;
+}
+
+.main-sreen__btnMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.main-sreen__button {
+    width: 98px;
+    height: 98px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    background: #fff;
+    border-radius: 12px;
+    border-color: #fff;
+    color: #0080c1;
+}
+
+.main-sreen__startBtn {
+    width: 246px;
+    height: 50px;
+    background: #7ac100;
+    border: none;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+} /*# sourceMappingURL=style.css.map */

@@ -1,15 +1,15 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: StratosSkyeng;
-    background-color:#004980 ;
+    background-color: #004980;
 }
 
-.main-sreen{
+.main-sreen {
     position: absolute;
     width: 480px;
     height: 459px;
-    background: #C2F5FF;
+    background: #c2f5ff;
     border-radius: 12px;
     margin: 25%;
     display: flex;
@@ -17,42 +17,45 @@ body{
     justify-content: center;
     align-items: center;
     gap: 48px;
-    
-    &__h1{
+
+    &__h1 {
         width: 208px;
         height: 96px;
         font-style: normal;
         font-weight: 400;
         font-size: 40px;
-        line-height: 48px;      
+        line-height: 48px;
         color: #004980;
     }
-    &__btnMenu{
+    &__btnMenu {
         display: flex;
         flex-direction: row;
         gap: 24px;
     }
-    &__button{
+    &__button {
         width: 98px;
         height: 98px;
         font-weight: 400;
         font-size: 64px;
         line-height: 72px;
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 12px;
-        border-color: #FFFFFF;
-        color: #0080C1;
+        border-color: #ffffff;
+        color: #0080c1;
     }
-    &__startBtn{
+    &__startBtn {
         width: 246px;
         height: 50px;
-        background: #7AC100;
-        border:none;
+        background: #7ac100;
+        border: none;
         border-radius: 12px;
         font-weight: 400;
         font-size: 24px;
         line-height: 32px;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 }
 
+.hidden {
+    display: none;
+}
