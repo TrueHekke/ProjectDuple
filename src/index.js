@@ -1,6 +1,6 @@
-function renderLobbySreen(){
+function renderLobbySreen() {
     const app = document.querySelector('.app');
-    
+
     clear();
 
     const main = document.createElement('div');
@@ -13,32 +13,32 @@ function renderLobbySreen(){
     app.appendChild(main);
 }
 
-function createLobbyH1(container){
+function createLobbyH1(container) {
     const lobbyH1 = document.createElement('h1');
     lobbyH1.textContent = 'Выбери сложность';
     lobbyH1.classList.add('main-sreen__h1');
     container.appendChild(lobbyH1);
 }
 
-function createLobbyBtnMenu(container){
+function createLobbyBtnMenu(container) {
     const lobbyBtnMenu = document.createElement('div');
     lobbyBtnMenu.classList.add('main-sreen__btnMenu');
     const easyButton = document.createElement('button');
     easyButton.textContent = '1';
     easyButton.classList.add('main-sreen__button');
-    easyButton.addEventListener('click',function (){
+    easyButton.addEventListener('click', function () {
         window.application.levels.value = 'easy';
     });
     const normalButton = document.createElement('button');
     normalButton.textContent = '2';
     normalButton.classList.add('main-sreen__button');
-    normalButton.addEventListener('click',function normalLevel(){
+    normalButton.addEventListener('click', function normalLevel() {
         window.application.levels.value = 'normal';
     });
     const hardButton = document.createElement('button');
     hardButton.textContent = '3';
     hardButton.classList.add('main-sreen__button');
-    hardButton.addEventListener('click',function hardLevel(){
+    hardButton.addEventListener('click', function hardLevel() {
         window.application.levels.value = 'hard';
     });
     container.appendChild(lobbyBtnMenu);
@@ -47,19 +47,23 @@ function createLobbyBtnMenu(container){
     lobbyBtnMenu.appendChild(hardButton);
 }
 
-function createStartBtn(container){
+function createStartBtn(container) {
     const startButton = document.createElement('button');
     startButton.textContent = 'Старт';
     startButton.classList.add('main-sreen__startBtn');
-    startButton.addEventListener('click',function(){
-        if(window.application.levels.value === 'easy'){
-            window.application.renderScreen('easy-level');
-        } else if(window.application.levels.value === 'normal'){
-            window.application.renderScreen('normal-level');
-        }else if(window.application.levels.value === 'hard'){
-            window.application.renderScreen('hard-level');
+    startButton.addEventListener('click', function () {
+        switch (window.application.levels.value) {
+            case 'easy':
+                window.application.renderScreen('easy-level');
+                break;
+            case 'normal':
+                window.application.renderScreen('normal-level');
+                break;
+            case 'hard':
+                window.application.renderScreen('hard-level');
+                break;
         }
-    })
+    });
     container.appendChild(startButton);
 }
 
@@ -68,4 +72,3 @@ window.application.blocks['lobbyBtnMenu'] = createLobbyBtnMenu;
 window.application.blocks['startButton'] = createStartBtn;
 
 window.application.screens['lobby-screen'] = renderLobbySreen;
-

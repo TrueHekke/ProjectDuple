@@ -1,0 +1,36 @@
+{
+  "name": "gameduple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ./src/",
+    "lint:js": "eslint ./src/**/*.js",
+    "lint:css": "stylelint ./src/**/*.css",
+    "prepare": "husky install",
+    "lint": "npm run lint:js && npm run lint:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrueHekke/ProjectDuple.git"
+  },
+  "author": "Andrey Shesterkin andrey.shesterkin@mail.ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrueHekke/ProjectDuple/issues"
+  },
+  "homepage": "https://github.com/TrueHekke/ProjectDuple#readme",
+  "devDependencies": {
+    "eslint": "8.15",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "esquery": "^1.4.2",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.4",
+    "stylelint": "14.8",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-prettier": "^2.0.0"
+  }
+}
