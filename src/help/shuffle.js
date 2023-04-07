@@ -13,6 +13,6 @@ function shuffle(count) {
             cards.push(card);
         }
     }
-    const duple = [...cards, ...cards];
-    return duple.sort(() => Math.random() - 0.5);
+    window.application.gameCards = [...cards, ...cards];
+    return window.application.gameCards.sort(() => Math.random() - 0.5);
 }
