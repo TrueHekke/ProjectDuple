@@ -3,7 +3,7 @@ export{}
 
 declare global {
     interface Window {
-        application: any;
+        application: Array<any>
     }
     
 }

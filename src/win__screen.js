@@ -1,5 +1,5 @@
 function renderWinScreen() {
-    const app = document.querySelector('.app') as HTMLInputElement;
+    const app = document.querySelector('.app');
     clear();
     const main = document.createElement('div');
     main.classList.add('main-sreen');
