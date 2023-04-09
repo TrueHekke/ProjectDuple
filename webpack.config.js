@@ -15,8 +15,15 @@ module.exports = {
         clean: true,
     },
     module: {
-        rules: 
-        [{ test: /\.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] },
+        rules: [
+            {
+                test: /\.ts$/,
+                use: "ts-loader",
+                exclude: /node_modules/,
+            },
+            { 
+                test: /\.css$/, 
+                use: [MiniCssExtractPlugin.loader, "css-loader"] },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 use: "asset/resource",
@@ -26,6 +33,9 @@ module.exports = {
                 use: "asset/resource",
             },
         ],
+    },
+    resolve: {
+        extensions: [".ts", ".js"],
     },
     plugins: [
         new HtmlWebpackPlugin({

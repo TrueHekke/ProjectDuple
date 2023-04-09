@@ -1,7 +1,6 @@
 const suits = ['clubs', 'spades', 'hearts', 'diamonds'];
 
 const values = ['6', '7', '8', '9', '10', 'Queen', 'King', 'Jack', 'Ace'];
-
 function shuffle(count) {
     const cards = [];
     while (cards.length < count) {
