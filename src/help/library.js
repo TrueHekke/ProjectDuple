@@ -9,7 +9,7 @@ const library = {
     },
     timers: {},
     realTime: {},
-    levels: [],
+    levels: {},
     gameCards: [],
     backs: [],
 };
