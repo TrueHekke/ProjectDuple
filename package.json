@@ -11,7 +11,8 @@
     "prepare": "husky install",
     "lint": "npm run lint:js && npm run lint:css",
     "build": "SET NODE_ENV='production' && webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "lint:ts":"tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,8 @@
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-prettier": "^2.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.3",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.1"
   }

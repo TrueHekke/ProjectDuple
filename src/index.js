@@ -54,13 +54,16 @@ function createStartBtn(container) {
     startButton.addEventListener('click', function () {
         switch (window.application.levels.value) {
             case 'easy':
+                window.application.difficulty = 6;
                 window.application.renderScreen('easy-level');
                 break;
             case 'normal':
-                window.application.renderScreen('normal-level');
+                window.application.difficulty = 12;
+                window.application.renderScreen('easy-level');
                 break;
             case 'hard':
-                window.application.renderScreen('hard-level');
+                window.application.difficulty = 18;
+                window.application.renderScreen('easy-level');
                 break;
         }
     });

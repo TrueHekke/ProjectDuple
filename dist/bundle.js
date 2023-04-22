@@ -1,8 +1,10 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 var __webpack_exports__ = {};
 /*!************************!*\
-  !*** ./src/process.js ***!
+  !*** ./src/process.ts ***!
   \************************/
+
 window.application.renderScreen('lobby-screen');
 
 /******/ })()
