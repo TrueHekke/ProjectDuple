@@ -58,6 +58,7 @@ const createBackCard = function (id) {
 
 const createCard = function (id, realId) {
     const card = document.createElement('img');
+    console.log(window.application.gameCards);
     const findCard = window.application.gameCards.find(
         (gameCard) => gameCard.id === realId
     );

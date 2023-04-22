@@ -13,15 +13,33 @@ declare global {
             levels: {
                 value:string;
             }
-            gameCards: Array<any>;
-            backs: Array<any>;
+            gameCards: Array<Record<string, string>>;
+            backs: Array<Record<string, number>>;
             difficulty: number;
             checkVictory: number;
             clearTimer: Function;
-            cards: any;
             timer: number;
+            cards:AllCardsType;
         }
     }
     
 }
 
+type CardType = {
+    img: string,
+    id: string
+}
+
+type CardsType = {
+    [key in string | number]: CardType
+}
+
+type AllCardsType = {
+   diamonds: CardsType,
+   spades: CardsType,
+   hearts: CardsType,
+   clubs: CardsType,
+   back: {
+    img: string
+   }
+}
