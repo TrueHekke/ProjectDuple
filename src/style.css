@@ -140,4 +140,6 @@ body {
     font-size: 64px;
     line-height: 72px;
     color: #000;
+    /* stylelint-disable-next-line length-zero-no-unit */
+    margin: 0px;
 } /*# sourceMappingURL=style.css.map */
