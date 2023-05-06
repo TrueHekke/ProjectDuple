@@ -96,7 +96,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .timerSec {
@@ -104,7 +104,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .timerTime {
@@ -112,8 +112,9 @@ body {
     font-weight: 400;
     font-size: 64px;
     line-height: 72px;
-    color: #ffffff;
-    margin: 0px;
+    color: #fff;
+    /* stylelint-disable-next-line length-zero-no-unit */
+    margin-top: 0px;
 }
 
 .resetButton {
@@ -124,7 +125,7 @@ body {
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .easyArea {
@@ -138,5 +139,5 @@ body {
     font-weight: 400;
     font-size: 64px;
     line-height: 72px;
-    color: #000000;
+    color: #000;
 } /*# sourceMappingURL=style.css.map */
