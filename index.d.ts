@@ -13,7 +13,7 @@ declare global {
             levels: {
                 value:string;
             }
-            gameCards: Array<Record<string, string>>;
+        gameCards: Array<Record<string, string>>;
             backs: Array<Record<string, number>>;
             difficulty: number;
             checkVictory: number;

@@ -58,4 +58,85 @@ body {
     font-size: 24px;
     line-height: 32px;
     color: #fff;
+}
+
+.main__easy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__easy-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 580px;
+    padding-bottom: 35px;
+}
+
+.timerContext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+}
+
+.timerMin {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.timerSec {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.timerTime {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.resetButton {
+    width: 246px;
+    height: 48px;
+    background: #7ac100;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.easyArea {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.timerTimeFimal {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #000000;
 } /*# sourceMappingURL=style.css.map */

@@ -5,17 +5,21 @@ function renderEasyLevelSreen() {
 
     const main = document.createElement('div');
     main.classList.add('main__easy');
+    const forMain = document.createElement('div');
+    forMain.classList.add('main__easy-filter');
 
-    window.application.renderBlock('easyTimer', main);
-    window.application.renderBlock('resetEasyBtn', main);
+    window.application.renderBlock('easyTimer', forMain);
+    window.application.renderBlock('resetEasyBtn', forMain);
+    main.appendChild(forMain);
     window.application.renderBlock('easyArea', main);
-
     app.appendChild(main);
 }
 
 function createEasyTimer(container) {
     const timer = document.createElement('div');
     timer.classList.add('timer');
+    const timerContext = document.createElement('div');
+    timerContext.classList.add('timerContext');
     const timerMin = document.createElement('p');
     timerMin.textContent = 'min';
     timerMin.classList.add('timerMin');
@@ -27,9 +31,10 @@ function createEasyTimer(container) {
     timerTime.classList.add('timerTime');
 
     container.appendChild(timer);
-    container.appendChild(timerMin);
-    container.appendChild(timerSec);
-    container.appendChild(timerTime);
+    timerContext.appendChild(timerMin);
+    timerContext.appendChild(timerSec);
+    timer.appendChild(timerContext);
+    timer.appendChild(timerTime);
 }
 
 function createResetEasyButton(container) {
@@ -58,7 +63,6 @@ const createBackCard = function (id) {
 
 const createCard = function (id, realId) {
     const card = document.createElement('img');
-    console.log(window.application.gameCards);
     const findCard = window.application.gameCards.find(
         (gameCard) => gameCard.id === realId
     );

@@ -26,7 +26,7 @@ function createLoseContent(container) {
     textContent.classList.add('timerContent');
     const timerTime = document.createElement('p');
     timerTime.textContent = `${window.application.realTime}`;
-    timerTime.classList.add('timerTime');
+    timerTime.classList.add('timerTimeFinal');
     contentMain.appendChild(textContent);
     contentMain.appendChild(timerTime);
     container.appendChild(contentMain);
