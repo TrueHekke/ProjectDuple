@@ -9,23 +9,7 @@
     <script defer src="bundle.js"></script></head>
     <body>
         <div class="app"></div>
-        <script>
-            window.application = {
-                blocks: {},
-                screens: {},
-                renderScreen: function (screenName) {
-                    window.application.screens[screenName]();
-                },
-                renderBlock: function (blockName, container) {
-                    window.application.blocks[blockName](container);
-                },
-                timers: {},
-                realTime: {},
-                levels: [],
-                gameCards: [],
-                backs: [],
-            };
-        </script>
+        <script src="./help/library.js"></script>
         <script src="./help/cards.js"></script>
         <script src="./help/clear__screen.js"></script>
         <script src="./help/shuffle.js"></script>

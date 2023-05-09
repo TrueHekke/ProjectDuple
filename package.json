@@ -10,7 +10,7 @@
     "prepare": "husky install",
     "lint": "npm run lint:js && npm run lint:css",
     "build": "SET NODE_ENV='production' && webpack",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server",
     "lint:ts": "tsc --noEmit",
     "test": "jest"
   },
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/TrueHekke/ProjectDuple#readme",
   "devDependencies": {
+    "babel-loader": "^9.1.2",
     "copy-webpack-plugin": "^11.0.0",
     "css-minimizer-webpack-plugin": "^4.2.2",
     "eslint": "8.15",
@@ -44,6 +45,9 @@
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.3",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.13.1"
+    "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0"
   }
 }
