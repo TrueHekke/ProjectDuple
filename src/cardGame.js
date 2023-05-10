@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-export const createCard = function (id, realId) {
+const createCard = function (id, realId) {
     const card = document.createElement('img');
     const findCard = library.gameCards.find(
         (gameCard) => gameCard.id === realId

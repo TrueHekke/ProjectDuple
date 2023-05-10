@@ -67,6 +67,7 @@ const createBackCard = function (id) {
     back.src = cards.back.img;
     back.id = `${id}`;
     back.addEventListener('click', function () {
+        // eslint-disable-next-line no-use-before-define
         gameProcess(id, library.gameCards[id].id);
     });
     return back;
