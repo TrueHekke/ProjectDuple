@@ -1,159 +1,197 @@
+import SixD from './img/SixD.svg';
+import SevenD from './img/SevenD.svg';
+import EightD from './img/EightD.svg';
+import NineD from './img/NineD.svg';
+import TenD from './img/TenD.svg';
+import JackD from './img/JackD.svg';
+import QueenD from './img/QueenD.svg';
+import KingD from './img/KingD.svg';
+import AceD from './img/AceD.svg';
+import SixS from './img/SixS.svg';
+import SevenS from './img/SevenS.svg';
+import EightS from './img/EightS.svg';
+import NineS from './img/NineS.svg';
+import TenS from './img/TenS.svg';
+import JackS from './img/JackS.svg';
+import QueenS from './img/QueenS.svg';
+import KingS from './img/KingS.svg';
+import AceS from './img/AceS.svg';
+import SixH from './img/SixH.svg';
+import SevenH from './img/SevenH.svg';
+import EightH from './img/EightH.svg';
+import NineH from './img/NineH.svg';
+import TenH from './img/TenH.svg';
+import JackH from './img/JackH.svg';
+import QueenH from './img/QueenH.svg';
+import KingH from './img/KingH.svg';
+import AceH from './img/AceH.svg';
+import SixC from './img/SixC.svg';
+import SevenC from './img/SevenC.svg';
+import EightC from './img/EightC.svg';
+import NineC from './img/NineC.svg';
+import TenC from './img/TenC.svg';
+import JackC from './img/JackC.svg';
+import QueenC from './img/QueenC.svg';
+import KingC from './img/KingC.svg';
+import AceC from './img/AceC.svg';
+import Back from './img/Back.svg';
+
 const cards = {
     diamonds: {
         6: {
-            img: './help/img/SixD.svg',
+            img: SixD,
             id: 'D6',
         },
         7: {
-            img: './help/img/SevenD.svg',
+            img: SevenD,
             id: 'D7',
         },
         8: {
-            img: './help/img/EightD.svg',
+            img: EightD,
             id: 'D8',
         },
         9: {
-            img: './help/img/NineD.svg',
+            img: NineD,
             id: 'D9',
         },
         10: {
-            img: './help/img/TenD.svg',
+            img: TenD,
             id: 'D10',
         },
         Jack: {
-            img: './help/img/JackD.svg',
+            img: JackD,
             id: 'DJ',
         },
         Queen: {
-            img: './help/img/QueenD.svg',
+            img: QueenD,
             id: 'DQ',
         },
         King: {
-            img: './help/img/KingD.svg',
+            img: KingD,
             id: 'DK',
         },
         Ace: {
-            img: './help/img/AceD.svg',
+            img: AceD,
             id: 'DA',
         },
     },
     spades: {
         6: {
-            img: './help/img/SixS.svg',
+            img: SixS,
             id: 'S6',
         },
         7: {
-            img: './help/img/SevenS.svg',
+            img: SevenS,
             id: 'S7',
         },
         8: {
-            img: './help/img/EightS.svg',
+            img: EightS,
             id: 'S8',
         },
         9: {
-            img: './help/img/NineS.svg',
+            img: NineS,
             id: 'S9',
         },
         10: {
-            img: './help/img/TenS.svg',
+            img: TenS,
             id: 'S10',
         },
         Jack: {
-            img: './help/img/JackS.svg',
+            img: JackS,
             id: 'SJ',
         },
         Queen: {
-            img: './help/img/QueenS.svg',
+            img: QueenS,
             id: 'SQ',
         },
         King: {
-            img: './help/img/KingS.svg',
+            img: KingS,
             id: 'SK',
         },
         Ace: {
-            img: './help/img/AceS.svg',
+            img: AceS,
             id: 'SA',
         },
     },
     hearts: {
         6: {
-            img: './help/img/SixH.svg',
+            img: SixH,
             id: 'H6',
         },
         7: {
-            img: './help/img/SevenH.svg',
+            img: SevenH,
             id: 'H7',
         },
         8: {
-            img: './help/img/EightH.svg',
+            img: EightH,
             id: 'H8',
         },
         9: {
-            img: './help/img/NineH.svg',
+            img: NineH,
             id: 'H9',
         },
         10: {
-            img: './help/img/TenH.svg',
+            img: TenH,
             id: 'H10',
         },
         Jack: {
-            img: './help/img/JackH.svg',
+            img: JackH,
             id: 'HJ',
         },
         Queen: {
-            img: './help/img/QueenH.svg',
+            img: QueenH,
             id: 'HQ',
         },
         King: {
-            img: './help/img/KingH.svg',
+            img: KingH,
             id: 'HK',
         },
         Ace: {
-            img: './help/img/AceH.svg',
+            img: AceH,
             id: 'HA',
         },
     },
     clubs: {
         6: {
-            img: './help/img/SixC.svg',
+            img: SixC,
             id: 'C6',
         },
         7: {
-            img: './help/img/SevenC.svg',
+            img: SevenC,
             id: 'C7',
         },
         8: {
-            img: './help/img/EightC.svg',
+            img: EightC,
             id: 'C8',
         },
         9: {
-            img: './help/img/NineC.svg',
+            img: NineC,
             id: 'C9',
         },
         10: {
-            img: './help/img/TenC.svg',
+            img: TenC,
             id: 'C10',
         },
         Jack: {
-            img: './help/img/JackC.svg',
+            img: JackC,
             id: 'CJ',
         },
         Queen: {
-            img: './help/img/QueenC.svg',
+            img: QueenC,
             id: 'CQ',
         },
         King: {
-            img: './help/img/KingC.svg',
+            img: KingC,
             id: 'CK',
         },
         Ace: {
-            img: './help/img/AceC.svg',
+            img: AceC,
             id: 'CA',
         },
     },
     back: {
-        img: './help/img/Back.svg',
+        img: Back,
     },
 };
 
-window.application.cards = cards;
+export { cards };

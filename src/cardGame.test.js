@@ -18,7 +18,7 @@ it('createCard should create an img element with correct id and src', () => {
     global.document = dom.window.document;
     global.navigator = dom.window.navigator;
 
-    global.window.application = {
+    global.library = {
         gameCards: mockGameCards,
     };
 

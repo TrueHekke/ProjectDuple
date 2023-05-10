@@ -6,7 +6,7 @@ body {
     background-color: #004980;
 }
 
-.main-sreen {
+.mainScreen {
     position: absolute;
     width: 480px;
     height: 459px;
@@ -20,7 +20,7 @@ body {
     gap: 48px;
 }
 
-.main-sreen__h1 {
+.mainScreenH1 {
     width: 208px;
     height: 96px;
     font-style: normal;
@@ -30,13 +30,13 @@ body {
     color: #004980;
 }
 
-.main-sreen__btnMenu {
+.mainScreenButtonMenu {
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
 
-.main-sreen__button {
+.mainScreenButton {
     width: 98px;
     height: 98px;
     font-weight: 400;
@@ -48,7 +48,7 @@ body {
     color: #0080c1;
 }
 
-.main-sreen__startBtn {
+.mainScreenStartButton {
     width: 246px;
     height: 50px;
     background: #7ac100;
@@ -60,14 +60,14 @@ body {
     color: #fff;
 }
 
-.main__easy {
+.mainEasy {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-.main__easy-filter {
+.mainEasyFilter {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -134,7 +134,7 @@ body {
     grid-template-columns: repeat(6, 1fr);
 }
 
-.timerTimeFimal {
+.timerTimeFinal {
     font-style: normal;
     font-weight: 400;
     font-size: 64px;

@@ -2,10 +2,10 @@ const library = {
     blocks: {},
     screens: {},
     renderScreen: function (screenName) {
-        window.application.screens[screenName]();
+        library.screens[screenName]();
     },
     renderBlock: function (blockName, container) {
-        window.application.blocks[blockName](container);
+        library.blocks[blockName](container);
     },
     timers: {},
     realTime: {},
@@ -13,4 +13,5 @@ const library = {
     gameCards: [],
     backs: [],
 };
-window.application = library;
+
+export default library;
