@@ -1,0 +1,145 @@
+/* stylelint-disable selector-class-pattern */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: StratosSkyeng, sans-serif;
+    background-color: #004980;
+}
+
+.mainScreen {
+    position: absolute;
+    width: 480px;
+    height: 459px;
+    background: #c2f5ff;
+    border-radius: 12px;
+    margin: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.mainScreenH1 {
+    width: 208px;
+    height: 96px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #004980;
+}
+
+.mainScreenButtonMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.mainScreenButton {
+    width: 98px;
+    height: 98px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    background: #fff;
+    border-radius: 12px;
+    border-color: #fff;
+    color: #0080c1;
+}
+
+.mainScreenStartButton {
+    width: 246px;
+    height: 50px;
+    background: #7ac100;
+    border: none;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.mainEasy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainEasyFilter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 580px;
+    padding-bottom: 35px;
+}
+
+.timerContext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+}
+
+.timerMin {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.timerSec {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.timerTime {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #fff;
+    /* stylelint-disable-next-line length-zero-no-unit */
+    margin-top: 0px;
+}
+
+.resetButton {
+    width: 246px;
+    height: 48px;
+    background: #7ac100;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.easyArea {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.timerTimeFinal {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #000;
+    /* stylelint-disable-next-line length-zero-no-unit */
+    margin: 0px;
+} /*# sourceMappingURL=style.css.map */

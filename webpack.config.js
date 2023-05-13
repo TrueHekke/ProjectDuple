@@ -1,14 +1,11 @@
 /* eslint-disable prettier/prettier */
-const path = require("path");
+const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
-const isProduction = process.env.NODE_ENV === "production";
-
 module.exports = {
-    entry: "./src/process.js",
-    mode: isProduction ? "production" : "development",
+    entry: "./src/index.js",
     output:{
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js",
@@ -23,14 +20,15 @@ module.exports = {
             },
             { 
                 test: /\.css$/, 
-                use: [MiniCssExtractPlugin.loader, "css-loader"] },
+                use: [MiniCssExtractPlugin.loader, "css-loader"] 
+            },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                use: "asset/resource",
+                type: "asset/resource",
             },
             {
                 test:/\.(woff|woff2|eor|ttf|otf)$/i,
-                use: "asset/resource",
+                type: "asset/resource",
             },
         ],
     },
@@ -46,5 +44,5 @@ module.exports = {
     optimization:{
         minimizer: ["...", new CssMinimizerPlugin()]
     },
-    devtool: isProduction ? "hidden-source-map" : "source-map",
+    mode: process.env.NODE_ENV === 'production' ? 'production' : 'development'
 };

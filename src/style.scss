@@ -5,7 +5,7 @@ body {
     background-color: #004980;
 }
 
-.main-sreen {
+.mainScreen {
     position: absolute;
     width: 480px;
     height: 459px;
@@ -54,4 +54,58 @@ body {
         line-height: 32px;
         color: #ffffff;
     }
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 21px;
+}
+
+.timerMin {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.timerSec {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.timerTime {
+    font-family: 'StratosSkyeng';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #ffffff;
+}
+
+.resetButton {
+    width: 246px;
+    height: 48px;
+    background: #7ac100;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.easyArea {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
 }

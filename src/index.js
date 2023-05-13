@@ -1,45 +1,51 @@
-function renderLobbySreen() {
+import library from './help/library';
+import styles from './style.module.css';
+import { clear } from './help/clear__screen';
+import { init } from './easy__level';
+import { cards } from './help/cards';
+
+export function renderLobbySreen() {
     const app = document.querySelector('.app');
 
     clear();
 
     const main = document.createElement('div');
-    main.classList.add('main-sreen');
+    main.classList.add(styles.mainScreen);
 
-    window.application.renderBlock('lobbyH1', main);
-    window.application.renderBlock('lobbyBtnMenu', main);
-    window.application.renderBlock('startButton', main);
+    library.renderBlock('lobbyH1', main);
+    library.renderBlock('lobbyBtnMenu', main);
+    library.renderBlock('startButton', main);
 
     app.appendChild(main);
 }
 
-function createLobbyH1(container) {
+export function createLobbyH1(container) {
     const lobbyH1 = document.createElement('h1');
     lobbyH1.textContent = 'Выбери сложность';
-    lobbyH1.classList.add('main-sreen__h1');
+    lobbyH1.classList.add(styles.mainScreenH1);
     container.appendChild(lobbyH1);
 }
 
-function createLobbyBtnMenu(container) {
+export function createLobbyBtnMenu(container) {
     const lobbyBtnMenu = document.createElement('div');
-    lobbyBtnMenu.classList.add('main-sreen__btnMenu');
+    lobbyBtnMenu.classList.add(styles.mainScreenButtonMenu);
     const easyButton = document.createElement('button');
     easyButton.textContent = '1';
-    easyButton.classList.add('main-sreen__button');
+    easyButton.classList.add(styles.mainScreenButton);
     easyButton.addEventListener('click', function () {
-        window.application.levels.value = 'easy';
+        library.levels.value = 'easy';
     });
     const normalButton = document.createElement('button');
     normalButton.textContent = '2';
-    normalButton.classList.add('main-sreen__button');
+    normalButton.classList.add(styles.mainScreenButton);
     normalButton.addEventListener('click', function normalLevel() {
-        window.application.levels.value = 'normal';
+        library.levels.value = 'normal';
     });
     const hardButton = document.createElement('button');
     hardButton.textContent = '3';
-    hardButton.classList.add('main-sreen__button');
+    hardButton.classList.add(styles.mainScreenButton);
     hardButton.addEventListener('click', function hardLevel() {
-        window.application.levels.value = 'hard';
+        library.levels.value = 'hard';
     });
     container.appendChild(lobbyBtnMenu);
     lobbyBtnMenu.appendChild(easyButton);
@@ -47,31 +53,38 @@ function createLobbyBtnMenu(container) {
     lobbyBtnMenu.appendChild(hardButton);
 }
 
-function createStartBtn(container) {
+export function createStartBtn(container) {
     const startButton = document.createElement('button');
     startButton.textContent = 'Старт';
-    startButton.classList.add('main-sreen__startBtn');
+    startButton.classList.add(styles.mainScreenStartButton);
     startButton.addEventListener('click', function () {
-        switch (window.application.levels.value) {
+        switch (library.levels.value) {
             case 'easy':
-                window.application.difficulty = 6;
-                window.application.renderScreen('easy-level');
+                library.difficulty = 6;
+                library.renderScreen('easy-level');
+                console.log(cards);
                 break;
             case 'normal':
-                window.application.difficulty = 12;
-                window.application.renderScreen('easy-level');
+                library.difficulty = 12;
+                library.renderScreen('easy-level');
+                console.log(cards);
                 break;
             case 'hard':
-                window.application.difficulty = 18;
-                window.application.renderScreen('easy-level');
+                library.difficulty = 18;
+                library.renderScreen('easy-level');
+                console.log(cards);
                 break;
         }
     });
     container.appendChild(startButton);
 }
 
-window.application.blocks['lobbyH1'] = createLobbyH1;
-window.application.blocks['lobbyBtnMenu'] = createLobbyBtnMenu;
-window.application.blocks['startButton'] = createStartBtn;
+library.blocks['lobbyH1'] = createLobbyH1;
+library.blocks['lobbyBtnMenu'] = createLobbyBtnMenu;
+library.blocks['startButton'] = createStartBtn;
 
-window.application.screens['lobby-screen'] = renderLobbySreen;
+library.screens['lobby-screen'] = renderLobbySreen;
+
+init();
+
+library.renderScreen('lobby-screen');
